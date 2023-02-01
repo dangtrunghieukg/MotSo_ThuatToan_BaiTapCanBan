@@ -1,5 +1,9 @@
+# Xóa màn hình cũ cho đẹp
+import os
+os.system('cls')
+
+N = int(input("Nhập N = "))
 lsN = []
-N = 101
 for i in range(0, N+1):
     lsN.append(0)
 
@@ -20,8 +24,7 @@ def LietKeChuoiNhiPhan(k):
         else:
             LietKeChuoiNhiPhan(k+1) # Đệ quy
 
-N = 2
-LietKeChuoiNhiPhan(1);
+LietKeChuoiNhiPhan(1)
 
 
 

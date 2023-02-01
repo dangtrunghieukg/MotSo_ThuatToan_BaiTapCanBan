@@ -11,19 +11,27 @@ void XuatChuoiNhiPhan(){
     cout << endl;
 }
 
-void DeQuy(int i){
+void LietKeChuoiNhiPhan(int i){
     for(int j=0; j<=1; j++){
         arrN[i]=j;
         if(i==N){
             XuatChuoiNhiPhan();
         }else{
-            DeQuy(i+1);
+            LietKeChuoiNhiPhan(i+1); // Đệ quy
         }
     }
 }
 
 int main(){
     N = 11;
-    DeQuy(1);
+    LietKeChuoiNhiPhan(1);
     return 0;
 }
+
+
+
+
+/*
+Tác giả: Thầy Đặng Trung Hiếu - Giáo viên dạy Toán trường THCS & THPT Long Thạnh - Giồng Riềng - Kiên Giang - Phone: 0939239628
+Donate: Paypal:dangtrunghieuspt@gmail.com ; Sacombank: Dang Trung Hieu - TK: 070126079549
+*/

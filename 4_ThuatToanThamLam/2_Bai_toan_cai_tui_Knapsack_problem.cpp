@@ -27,7 +27,8 @@ bool SoSanhTheoTiLeGiaTriTrongLuong(const strVatPham& a, const strVatPham& b) {
 }
 
 double CaiTui(vector<strVatPham>& dsVatPham, int khoiLuongToiDa) {
-    //Sắp xếp từ bé đến lớn
+    //Sắp xếp từ bé đến lớn; Nhưng vì kiểu struct chúng ta xây dựng máy nó không hiểu thứ tự lớn bé
+    //Do đó chúng ta cần xây dựng hàm SoSanh.... để chỉ cho nó biết cách so sánh.
     sort(dsVatPham.begin(), dsVatPham.end(), SoSanhTheoTiLeGiaTriTrongLuong);
     double tongGiaTri = 0.0;
     int tongTrongLuong = 0;

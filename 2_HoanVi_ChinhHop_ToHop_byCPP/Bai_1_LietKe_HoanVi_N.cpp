@@ -2,9 +2,8 @@
 #include <iostream>
 using namespace std;
 
-#define MAX 1001
-bool arrDanhDau[MAX]; //Mảng đánh dấu true = chọn, false = không chọn
-int arrDayHoanVi[MAX]; //Mảng lưu trữ phần tử trong dãy hoán vị
+bool arrDanhDau[20]; //Mảng đánh dấu true = chọn, false = không chọn
+int arrDayHoanVi[20]; //Mảng lưu trữ phần tử trong dãy hoán vị
 int N;
 
 void XuatHoanVi(){
@@ -31,7 +30,7 @@ void TimHoanVi(int k){
 }
 
 int main(){
-    N = 4;
+    N = 3;
     //Đánh dấu tất cả các phần tử ban đầu đều sẵn sàng được chọn = true
     for(int i=1; i<=N; i++)
         arrDanhDau[i] = true;
